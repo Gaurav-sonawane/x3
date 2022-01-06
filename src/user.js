@@ -26,13 +26,6 @@ const addUser = async (user) => {
   connection.endAsync();
 };
 
-const user = {
-  Id: "2",
-  username: "harshad",
-  password: "ksfkjsfj",
-  email: "harsh@gmail.com",
-};
-
 addUser(user);
 
 const selectUser = async () => {
@@ -48,3 +41,5 @@ const selectUser = async () => {
 };
 
 selectUser();
+
+module.expoerts = { selectUser, addUser };
