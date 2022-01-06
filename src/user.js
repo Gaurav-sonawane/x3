@@ -26,8 +26,6 @@ const addUser = async (user) => {
   connection.endAsync();
 };
 
-addUser(user);
-
 const selectUser = async () => {
   const connection = mysql.createConnection(dbinfo);
   await connection.connectAsync();
@@ -40,6 +38,4 @@ const selectUser = async () => {
   await connection.endAsync();
 };
 
-selectUser();
-
-module.expoerts = { selectUser, addUser };
+module.exports = { selectUser, addUser };
